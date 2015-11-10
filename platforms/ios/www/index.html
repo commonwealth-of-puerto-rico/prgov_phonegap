@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="framework7/css/framework7.css">
+        
+        <link rel="stylesheet" href="css/welcomescreen.css?v=5">
+        <link rel="stylesheet" href="css/framework7.3dpanels.min.css">
+        <link rel="stylesheet" href="css/toast.css">
+                    
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+        <title>PRGOV</title>
+    </head>
+    <body onload="onBodyLoad()">        
+        <div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>
+        <div class="panel panel-right panel-reveal">
+            <br /><br /><br />
+            <ul class="sidemenu">
+                <li><a href="#" onclick="showHelp();">Manual de Ayuda</a></li>
+                <li><a href="#" onclick="socialsharing()">Comparte PRGOV</a></li>
+                <li><a href="#" onclick="showAbout();">Acerca del App</a></li>
+                <li><a href="#" onclick="requestsupport()">Contáctenos</a></li>
+            </ul>
+            <br /><br />
+            <div class="" style="text-align: right;padding-right: 10px;">
+                <a href="#" onclick="loadMyURL('http://www.pr.gov');"><img src="img/logo.png" width="131" height="43" /></a>
+                <br /><br />
+                <a href="#" onclick="loadMyURL('https://data.pr.gov');"><img src="img/dataprgov.png" width="178" height="35" style="padding-right: 4px;" /></a>
+            </div>
+        </div><!-- end: panel -->
+        
+        <div class="views">
+            <div class="view view-main myios7body">
+                
+                <div class="navbar no-border transparentbar" ontouchmove="touchMove(event)">
+                    <div class="navbar-inner">
+                        <div class="left"><a href="#" class="open-panel link icon-only"></a></div>
+                        <div class="center sliding"></div>
+                        <div class="right"><a href="#" class="open-panel link icon-only"><img src="img/logo-alt.png" width="123" height="40" /></a></div>
+                    </div>
+                </div><!-- end: navbar -->
+                <div class="pages navbar-through toolbar-through">
+                    <div data-page="index" class="page backgroundimage">
+                        <div class="page-content">
+
+                            <div class="content-block2">
+                               <div align="center"><img src="img/escudo.png" class="escudo" /></div>
+                               <br /><br /><br /><br />
+                               <a href="#" onclick="scanme();" class="button button-big color-fbcolor button-fill myscanbtn">
+                                    <img src="img/scan.png" class="scanimgtxt">
+                               </a>
+                            </div>
+                            
+                        </div><!-- end: page-content -->
+                    </div><!-- end: #ndex -->
+                </div><!-- end: pages -->
+            </div><!-- end: main-view -->
+            
+        </div><!-- end: views -->
+        
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="framework7/js/framework7.min.js"></script>
+        
+         <script type="text/javascript" src="js/welcomescreen.js?v=5"></script>
+        <script src="js/framework7.3dpanels.min.js"></script>
+        <script src="js/toast.js"></script>
+        <script src="js/simpleStorage.js"></script>
+        
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>        
+    </body>
+</html>
+
